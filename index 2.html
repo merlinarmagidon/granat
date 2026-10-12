@@ -58,6 +58,28 @@ body{
         border-radius:0 !important;
     }
     .page:last-child{page-break-after:auto;break-after:auto;}
+
+    /* Печать: меньше пустых мест — плотнее */
+    .cover-front,
+    .cover-back,
+    .cover-bar{
+        padding-top:40px !important;
+        padding-bottom:30px !important;
+    }
+    .page-header{padding:34px 50px 12px !important;}
+    .page-header.tight{padding:30px 50px 8px !important;}
+    .page-header.tight.lower{padding:26px 50px 8px !important;}
+    .page-header.tight.lower.middle{padding:22px 50px 6px !important;}
+    .page-header.compact{padding:26px 50px 6px !important;}
+    .menu-list{padding:8px 60px 24px !important;}
+    .menu-list.tight{padding-top:0 !important;padding-bottom:18px !important;}
+    .menu-list.tight.lower{padding-top:4px !important;}
+    .menu-list.tight.lower.middle{padding-top:8px !important;}
+    .menu-list.compact{padding-top:0 !important;padding-bottom:16px !important;}
+    .banquet-content{padding:40px 70px 24px !important;}
+    .banquet-menu2{margin-top:24px !important;}
+    .wine-kinds{margin:-4px 0 8px !important;line-height:1.5 !important;}
+
     *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;}
 }
 
@@ -1067,8 +1089,8 @@ body{
     <div class="corner-decor corner-bl">❦</div>
     <div class="corner-decor corner-br">❦</div>
 
-    <div class="page-header lower"><h2>Салаты</h2></div>
-    <div class="menu-list lower">
+    <div class="page-header tight lower"><h2>Салаты</h2></div>
+    <div class="menu-list tight lower">
         <div class="menu-item"><div class="item-name">Цезарь с курицей <span class="item-weight">180 г</span><div class="item-desc">Айсберг, черри, пармезан, куриное филе, зелень, яйцо перепелиное, соус</div><div class="item-kbzhu">К 756 • Б 43 • Ж 50 • У 25</div></div><div class="item-price">500 ₽</div></div>
         <div class="menu-item"><div class="item-name">Цезарь с сёмгой <span class="item-weight">180 г</span><div class="item-desc">Айсберг, черри, пармезан, сёмга с/с, зелень, яйцо перепелиное, соус</div><div class="item-kbzhu">К 684 • Б 40 • Ж 43 • У 25</div></div><div class="item-price">540 ₽</div></div>
         <div class="menu-item"><div class="item-name">Цезарь с креветками <span class="item-weight">180 г</span><div class="item-desc">Айсберг, черри, пармезан, креветки, зелень, яйцо перепелиное, соус</div><div class="item-kbzhu">К 612 • Б 40 • Ж 36 • У 25</div></div><div class="item-price">580 ₽</div></div>
